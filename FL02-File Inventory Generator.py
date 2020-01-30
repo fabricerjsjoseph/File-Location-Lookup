@@ -11,13 +11,6 @@ def create_list(directory,inventory,sheetname):
     #This is a list comprehension where you are outputing the results in the for loop directly in the list
     files = [f for f in glob.glob(directory + '/**', recursive=True)]
 
-    #Printing all objects in list in a readable format
-    #for f in files :
-        #print(f)
-
-
-
-
     #Creating a dataframe from list files
     df=pd.DataFrame(files)
 
@@ -26,14 +19,8 @@ def create_list(directory,inventory,sheetname):
     #Count no of '\' in each row and add values to new column called backslash count
     df['Backslash count']= df[0].str.count(r'\\',re.I)
 
-
-    #printing df with backslash count
-    #print(df)
-
     #Calculate max value in backslash count
     no_of_cols= df['Backslash count'].max()-1
-
-
 
     #CREATING NEW DATAFRAME
     #Spliting the string using \ as seperator
@@ -47,9 +34,6 @@ def create_list(directory,inventory,sheetname):
     #Renaming columns of df2
     df2.columns=col_header
 
-    #print(df2)
-    #Export df2 to csv
-    #df2.to_csv("list.csv",index=False)
     #EXPORTING DATAFRAME TO EXCEL ( OVERRIDES EXISTING FILE EVERYTIME)
     #from pandas import ExcelWriter
     #writer=ExcelWriter('File Inventory.xlsx')
