@@ -30,3 +30,6 @@ def generate_df():
     master_df.columns=['File_Path','Root_Folder']
 
     return master_df.to_csv('FM02_File_Search_df.csv',index=False)
+
+#execute function to update csv file
+generate_df()
