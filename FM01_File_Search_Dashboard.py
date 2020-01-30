@@ -10,7 +10,7 @@ import webbrowser
 
 def create_app():
     # importing csv into DataFrame
-    df=pd.read_csv('FM00_File_Search_df.csv')
+    df=pd.read_csv('FM02_File_Search_df.csv')
 
     folder_list=df['Root_Folder'].unique()
 
@@ -76,7 +76,7 @@ app=create_app()
 
 # Register webbrowser
 chrome_path="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path)
+webbrowser.register('chrome', None,webbrowser.BackgroundBrowser(chrome_path))
 
 # Run app
 if __name__ == '__main__':
