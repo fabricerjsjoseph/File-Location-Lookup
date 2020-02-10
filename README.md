@@ -5,8 +5,6 @@
 I created this web application (hosted locally) because I found Windows Explorer’s search function to be too slow and often returning incomplete results. The search function built into this web application app is lightning fast and produces more relevant results.
 
 ## Demo
-tsting some
-
 ![](File_path_Demo_20200210.gif)
 
 ## Process Overview
