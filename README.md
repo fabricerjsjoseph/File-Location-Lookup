@@ -6,8 +6,7 @@ I created this web application (hosted locally) because I found Windows Explorer
 
 ## Demo
 
-
-![](filename.gif)
+![](File_path_Demo_20200210.gif)
 
 ## Process Overview
 
